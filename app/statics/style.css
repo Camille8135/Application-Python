@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+/* Style de la barre de navigation */
+header {
+    height: 100px;
+    background-color: #C89F9C;
+}
+
+.img {
+    margin: auto;
+    height: 100px;
+    width: 125px;
+    background-color:#C89F9C;
+
+}
+
+nav {
+    float: right;
+    width: 35%;
+    margin: 2%;
+    font-family: serif;
+    font-weight: bold;
+    font-size: large;
+    color: #5E548E;
+}
+
+
+.up {
+    text-align: center;
+}
+
+#bandeau{
+    margin: auto; 
+    text-align: center;
+}
+
+/* Arrière-plan du corps du site */
+body {
+    background-color: #FDE2E4;
+    height: 100%;
+}
+
+/* Style des titres */
+h1 {
+    color: #D4A373;
+    font-family: Georgia, sans-serif;
+    font-size: 300%;
+}
+
+h2 {
+    color: #A3B18A;
+    font-family: Georgia, sans-serif;
+    font-size: 225%;
+}
+
+h3 {
+  
+    color: #B5838D;
+    font-family: Georgia, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center; 
+
+}
+
+/* Style du texte de la page d'accueil */
+.home {
+    font-family: Georgia, sans-serif;
+    color: #5E548E;
+};
+
+/* Style de la page listant les pièces de théâtre, pour le texte et la bordure */
+.liste_pieces {
+    display: flex;
+    color: #5E548E;
+    font-family: Georgia, sans-serif;
+    text-align: center;
+   /* justify-content: center;*/
+    padding: 2%;
+    border: 2px solid #B5838D;
+    border-radius: 5px;
+    width: 95%;
+
+}
+
+.liste_autrices{
+    display: flex;
+    color: #5E548E;
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    /*justify-content: center;*/
+    padding: 2%;
+    border: 2px solid #B5838D;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.accueil{
+    text-align: center;
+justify-content: center;
+font-family: Georgia, sans-serif;
+font-weight: bold;
+font-size: 25px;
+}
+
+.sommaire_autrices{
+text-align: center;
+justify-content: center;
+font-family: Georgia, sans-serif;
+font-weight: bold;
+font-size: large;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.index_pieces{
+    text-align: center;
+    justify-content: center;  
+    font-family: Georgia, sans-serif;
+    font-weight: bold;
+font-size: large;
+}
+
+.liste_pieces_theatre{
+    text-align: center;
+justify-content: center;
+font-family: Georgia, sans-serif;
+font-weight: bold;
+font-size: large;
+}
+
+.Liste_théâtres{
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, sans-serif;
+font-weight: bold;
+font-size: large;
+}
+
+.info_autrice{
+    text-align: center;
+    justify-content: center; 
+    font-family: Georgia, sans-serif;
+}
+
+.infos_piece{
+    text-align: center;
+    justify-content: center; 
+    font-family: Georgia, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #5E548E;
+}
+
+a:hover {
+    color: grey;
+}
+
+/* Style des pages présentant la configuration des pièces et la carte */
+.index {
+    color: #5E548E;
+    font-family: Georgia, sans-serif;
+    border: 2px solid #B5838D;
+    border-radius: 0px;
+    margin: 35px;
+    margin-left: 20px;
+    margin-right: 750px;
+}
+
+
+#form{
+    /*s'applique sur les données supplémentaires de la page théâtres*/
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, sans-serif;
+    text-align: center;
+}
+form {
+    /*les marges intérieures sont de 50px sur l'axe y et 30.5% sur l'axe x*/
+    padding: 10px 30.5%;
+    color: #5E548E;
+    font-family: Georgia, sans-serif;
+    text-align: center;
+}
+
+
+label{
+    font-weight: bold;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+form>* {
+    margin-top: 10px;
+}
+
+select{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 370px;
+    color: #5E548E;
+    font-family: Georgia, sans-serif;
+}
+
+
+.button_insertion > input{
+    width: 40%;
+    background-color:#5E548E;
+    color: white;
+    border: none;
+    height: 35px;
+    font-size: 15px;
+    font-family: Georgia, sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button_insertion > input:hover {
+    color: #5E548E;
+    background-color: lightgray;
+    border: 2px solid #5E548E;
+}
+
+
+/* Style pour le footer */
+footer {
+    background-color: #C89F9C;
+    text-align: center;
+    color: #5E548E;
+    font-family: Georgia, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 2%;
+}

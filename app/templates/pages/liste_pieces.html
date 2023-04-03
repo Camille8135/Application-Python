@@ -1,0 +1,21 @@
+{% extends "partials/conteneur.html" %}
+
+{%block body%}
+
+<h3>Pièces de théâtre</h3>
+<ul class="index_pieces">
+    {%if donnees.prev_num %}
+                <a class="list-group-item" href="{{ url_for('pieces', page=donnees.prev_num) }}">
+                    Page précédente &lt;
+                </a>
+                {% endif %}
+    {%for piece in donnees.items%}
+    <li><a href="{{url_for('presentation_piece', titre=piece.title)}}">{{piece.title}}</a></li>
+    {%endfor%}
+    {%if donnees.next_num %}
+                <a class="list-group-item" href="{{ url_for('pieces', page=donnees.next_num) }}">
+                    Page suivante &gt;
+                </a>
+                {% endif %}
+</ul>
+{%endblock%}

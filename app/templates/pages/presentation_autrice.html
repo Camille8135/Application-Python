@@ -1,0 +1,38 @@
+{% extends "partials/conteneur.html" %}
+
+{%block body%}
+
+
+<h3>{{id_authoress['authoress']['id']}}</h3>
+
+<div class="info_autrice">
+    <ul>
+        {%if id_authoress['authoress']['wikipedia'] is none:%}
+        <li>Pas de fiche wikipédia.</li>
+        {%else%}
+        <li><a href="{{id_authoress['authoress']['wikipedia']}}">{{id_authoress['authoress']['wikipedia']}}</a></li>
+        {%endif%}
+        {%if id_authoress['authoress']['wikidata'] is none:%}
+        <li>Pas d'identifiant wikidata.</li>
+        {%else%}
+        <li><a href="{{id_authoress['authoress']['wikidata']}}">{{id_authoress['authoress']['wikidata']}}</a></li>
+        {%endif%}
+        {%if id_authoress['authoress']['bnf'] is none:%}
+        <li>Pas de notice BnF.</li>
+        {%else%}
+        <li><a href="{{id_authoress['authoress']['bnf']}}">{{id_authoress['authoress']['bnf']}}</a></li>
+        {%endif%}
+    </ul>
+    <ul>
+        {%for piece in id_authoress['piece']%}
+        <li class="titre_piece"><a href="{{url_for('presentation_piece', titre=piece['titre'])}}">{{piece['titre']}}</a> ({{piece['date']}})</li>
+        {%endfor%}
+        
+    </ul>
+    
+    <a class="update" href="{{url_for('update_autrice', name=id_authoress['authoress']['id'])}}">Modifier les informations</a>
+    
+
+</div>
+
+{%endblock%}
